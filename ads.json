@@ -1,1 +1,19 @@
-{}
+{
+    "AdaptiveAuth_PwdOrOTP": {
+        "projectName": "AdaptiveAuth_PwdOrOTP",
+        "description": "authentication flow based on risk score",
+        "type": "community",
+        "author": "sravan9440",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/sravan9440/adap_auth_flow",
+        "githubUri": "https://github.com/sravan9440/adap_auth_flow",
+        "license": "apache-2.0",
+        "lastUpdated": "1757351206214",
+        "tags": [
+            "authentication",
+            "adaptive authentication"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
+    }
+}
