@@ -14,7 +14,9 @@
             "adaptive authentication"
         ],
         "noDirectLaunch": [],
-        "configs": {},
+        "configs": {
+            "io.demo.adaptive.main": {}
+        },
         "name": "AdaptiveAuth_PwdOrOTP"
     }
 }
