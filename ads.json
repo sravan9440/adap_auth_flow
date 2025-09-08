@@ -14,9 +14,7 @@
             "adaptive authentication"
         ],
         "noDirectLaunch": [],
-        "configs": {
-            "co.sravan.AdaptiveAuth": {}
-        },
+        "configs": {},
         "name": "AdaptiveAuth_PwdOrOTP"
     }
 }
