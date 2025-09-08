@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-4be4a6b0-7a41-44fe-87ea-6936b7feed48",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-4be4a6b0-7a41-44fe-87ea-6936b7feed48",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "io.demo.adaptive.main",
+          "displayName": "adaptive main",
+          "creationDate": "08/09/2025",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
