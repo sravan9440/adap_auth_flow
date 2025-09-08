@@ -1,4 +1,0 @@
-Flow co.sravan.AdaptiveAuth
-     Basepath ""
-RRF "start.ftlh" ctx
-ctx = {}
