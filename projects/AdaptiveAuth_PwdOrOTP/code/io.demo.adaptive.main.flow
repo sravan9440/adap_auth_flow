@@ -18,9 +18,16 @@ Repeat 3 times max
           hour = Call now getHour 
           // (hour >= 22) || (hour < 6)
           When hour is 23 or hour is 0 or hour is 1 or hour is 2 or hour is 3 or hour is 4 or hour is 5
-               RRF "__________" 
+               otp = RRF "otp.ftlh" 
+               // demo OTP = 123456
+               When otp is 123456
+                    it_cyuks = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+                    Finish it_cyuks
+               Otherwise
+                    it_qcmuw = {success:false, error: "OTP INVALID"}
+                    Finish it_qcmuw
           Otherwise
-               it_aricy = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
-               Finish it_aricy
-it_fptin = {success:false, error: "Authentication failed . maximum authentication attempts reached"}
-Finish it_fptin
+               it_jzkhs = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+               Finish it_jzkhs
+it_qsymm = {success:false, error: "Authentication failed . maximum authentication attempts reached"}
+Finish it_qsymm
