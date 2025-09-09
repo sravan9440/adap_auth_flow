@@ -1,2 +1,8 @@
 Flow io.demo.adaptive.main
      Basepath ""
+// get authentication service class reference from the idp
+authServiceClass = Call io.jans.as.server.service.AuthenticationService#class 
+// get authentication service instance reference from idp
+authService = Call io.jans.service.cdi.util.CdiUtil#bean authServiceClass
+// create empty object to store the authentication result
+authResult = {}
