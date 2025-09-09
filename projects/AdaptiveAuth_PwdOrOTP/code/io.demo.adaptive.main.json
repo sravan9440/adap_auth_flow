@@ -161,7 +161,7 @@
 			"id": "repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1",
 			"type": "repeatNode",
 			"position": {
-				"x": 529.8135330515685,
+				"x": 491.9064873366664,
 				"y": -54.880127724582316
 			},
 			"data": {
@@ -188,14 +188,15 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546",
 			"type": "rrfNode",
 			"position": {
-				"x": 779.8135330515685,
-				"y": 195.1198722754177
+				"x": 601.583595633312,
+				"y": 127.06080700785091
 			},
 			"data": {
 				"id": "rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546",
@@ -224,7 +225,84 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "callNode-8aed0c98-a2f0-43b9-9707-6cd565485bdd",
+			"type": "callNode",
+			"position": {
+				"x": 829.7583268883683,
+				"y": 123.61471194285977
+			},
+			"data": {
+				"id": "callNode-8aed0c98-a2f0-43b9-9707-6cd565485bdd",
+				"type": "callNode",
+				"position": {
+					"x": 851.583595633312,
+					"y": 127.06080700785091
+				},
+				"previousNodeId": "rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "authenticate",
+					"javaVariableName": "authService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"creds.username",
+						"creds.password"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "validation of credentials",
+					"hasComment": true,
+					"comment": "validate username and password with idp",
+					"asssignedVariableName": "authResult.success"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "whenNode-a986d7ac-6589-4ed2-876d-45ae4a8e8ed9",
+			"type": "whenNode",
+			"position": {
+				"x": 1079.7583268883682,
+				"y": 181.61471194285977
+			},
+			"data": {
+				"id": "whenNode-a986d7ac-6589-4ed2-876d-45ae4a8e8ed9",
+				"type": "whenNode",
+				"position": {
+					"x": 1079.7583268883682,
+					"y": 181.61471194285977
+				},
+				"previousNodeId": "callNode-8aed0c98-a2f0-43b9-9707-6cd565485bdd",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 60
+			}
 		}
 	],
 	"edges": [
@@ -322,11 +400,49 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1_repeat"
+		},
+		{
+			"id": "rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546-callNode-8aed0c98-a2f0-43b9-9707-6cd565485bdd",
+			"type": "default",
+			"source": "rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546",
+			"target": "callNode-8aed0c98-a2f0-43b9-9707-6cd565485bdd",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546"
+		},
+		{
+			"id": "callNode-8aed0c98-a2f0-43b9-9707-6cd565485bdd-whenNode-a986d7ac-6589-4ed2-876d-45ae4a8e8ed9",
+			"type": "default",
+			"source": "callNode-8aed0c98-a2f0-43b9-9707-6cd565485bdd",
+			"target": "whenNode-a986d7ac-6589-4ed2-876d-45ae4a8e8ed9",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-8aed0c98-a2f0-43b9-9707-6cd565485bdd"
 		}
 	],
 	"viewport": {
-		"x": 248.02612422983884,
-		"y": 128.7319098249631,
-		"zoom": 0.659753955386447
+		"x": -34.00188703892269,
+		"y": 107.59170814765753,
+		"zoom": 0.870550563296124
 	}
 }
