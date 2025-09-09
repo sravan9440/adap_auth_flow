@@ -21,13 +21,13 @@ Repeat 3 times max
                otp = RRF "otp.ftlh" 
                // demo OTP = 123456
                When otp is 123456
-                    it_cyuks = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
-                    Finish it_cyuks
+                    it_mbejq = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+                    Finish it_mbejq
                Otherwise
-                    it_qcmuw = {success:false, error: "OTP INVALID"}
-                    Finish it_qcmuw
+                    it_nujhp = {success:false, error: "OTP INVALID"}
+                    Finish it_nujhp
           Otherwise
-               it_jzkhs = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
-               Finish it_jzkhs
-it_qsymm = {success:false, error: "Authentication failed . maximum authentication attempts reached"}
-Finish it_qsymm
+               it_aqzbr = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+               Finish it_aqzbr
+it_mgrlq = {success:false, error: "Authentication failed . maximum authentication attempts reached"}
+Finish it_mgrlq
