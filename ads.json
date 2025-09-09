@@ -15,8 +15,7 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "io.demo.adaptive.main": {},
-            "IO.DEMO1.ADAPTIVE.MAIM.FLOW": {}
+            "io.demo.adaptive.main": {}
         },
         "name": "AdaptiveAuth_PwdOrOTP"
     }
