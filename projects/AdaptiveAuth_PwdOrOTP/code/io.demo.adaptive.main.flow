@@ -6,3 +6,7 @@ authServiceClass = Call io.jans.as.server.service.AuthenticationService#class
 authService = Call io.jans.service.cdi.util.CdiUtil#bean authServiceClass
 // create empty object to store the authentication result
 authResult = {}
+// retry 3 times to get correct username and password
+Repeat 3 times max
+     // loads the login page for entry of username and password
+     creds = RRF "login.ftlh" authResult
