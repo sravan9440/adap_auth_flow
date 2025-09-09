@@ -115,7 +115,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -156,6 +156,75 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1",
+			"type": "repeatNode",
+			"position": {
+				"x": 529.8135330515685,
+				"y": -54.880127724582316
+			},
+			"data": {
+				"id": "repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1",
+				"type": "repeatNode",
+				"position": {
+					"x": 529.8135330515685,
+					"y": -54.880127724582316
+				},
+				"previousNodeId": "assignmentNode-c845310d-531c-489a-a70a-4c1f4a25a8d8",
+				"agamaData": {
+					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
+					"maxIteration": "3",
+					"maxIterationVariableName": "",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "retry Authentication",
+					"hasComment": true,
+					"comment": "retry 3 times to get correct username and password"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false
+		},
+		{
+			"id": "rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546",
+			"type": "rrfNode",
+			"position": {
+				"x": 779.8135330515685,
+				"y": 195.1198722754177
+			},
+			"data": {
+				"id": "rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546",
+				"type": "rrfNode",
+				"position": {
+					"x": 779.8135330515685,
+					"y": 195.1198722754177
+				},
+				"previousNodeId": "repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1",
+				"branching": "repeat",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "login.ftlh",
+					"asssignedVariableName": "creds",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Logiin page",
+					"hasComment": true,
+					"comment": "loads the login page for entry of username and password",
+					"arguments": "authResult"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -215,10 +284,48 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_callNode-16e81a63-505d-420e-a811-33c6a0108e87"
+		},
+		{
+			"id": "assignmentNode-c845310d-531c-489a-a70a-4c1f4a25a8d8-repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1",
+			"type": "default",
+			"source": "assignmentNode-c845310d-531c-489a-a70a-4c1f4a25a8d8",
+			"target": "repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-c845310d-531c-489a-a70a-4c1f4a25a8d8"
+		},
+		{
+			"id": "repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1-rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546",
+			"type": "default",
+			"source": "repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1",
+			"target": "rrfNode-702c49d7-0bb6-4de7-99c5-d71e66ec6546",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "repeat",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-b81f365f-6e15-4eb1-a7c0-93d7ba4496d1_repeat"
 		}
 	],
 	"viewport": {
-		"x": 248.0261242298389,
+		"x": 248.02612422983884,
 		"y": 128.7319098249631,
 		"zoom": 0.659753955386447
 	}
