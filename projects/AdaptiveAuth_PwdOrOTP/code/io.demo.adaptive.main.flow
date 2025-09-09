@@ -10,3 +10,6 @@ authResult = {}
 Repeat 3 times max
      // loads the login page for entry of username and password
      creds = RRF "login.ftlh" authResult
+     // validate username and password with idp
+     authResult.success = Call authService authenticate creds.username creds.password
+     When 
