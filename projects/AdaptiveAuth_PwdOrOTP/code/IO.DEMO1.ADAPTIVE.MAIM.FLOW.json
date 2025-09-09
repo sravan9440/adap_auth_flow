@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-a61220e3-df93-465e-9c4c-14c561a24f3f",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-a61220e3-df93-465e-9c4c-14c561a24f3f",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "IO.DEMO1.ADAPTIVE.MAIM.FLOW",
+          "displayName": "NEW_1",
+          "creationDate": "09/09/2025",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
