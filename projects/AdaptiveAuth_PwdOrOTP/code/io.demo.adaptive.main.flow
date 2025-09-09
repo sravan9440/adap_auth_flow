@@ -12,4 +12,15 @@ Repeat 3 times max
      creds = RRF "login.ftlh" authResult
      // validate username and password with idp
      authResult.success = Call authService authenticate creds.username creds.password
-     When 
+     // check if the authentication was successful
+     When authResult.success is true
+          now = Call java.time.LocalTime#now 
+          hour = Call now getHour 
+          // (hour >= 22) || (hour < 6)
+          When hour is 23 or hour is 0 or hour is 1 or hour is 2 or hour is 3 or hour is 4 or hour is 5
+               RRF "__________" 
+          Otherwise
+               it_aricy = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+               Finish it_aricy
+it_fptin = {success:false, error: "Authentication failed . maximum authentication attempts reached"}
+Finish it_fptin
