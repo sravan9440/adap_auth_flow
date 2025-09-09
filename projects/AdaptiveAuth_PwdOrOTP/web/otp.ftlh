@@ -1,12 +1,15 @@
 [#ftl output_format="HTML"]
- <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blank_Template</title>
-      </head>
-      <body>
-      </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+  <h2>One-Time Password</h2>
+  <p>Higher-risk sign-in detected. Enter the 6-digit code.</p>
+  <form method="post">
+    <input name="code" pattern="\d{6}" maxlength="6" required="">
+    <button type="submit">Verify</button>
+  </form>
+</body>
+
+
+</html>
